@@ -2,7 +2,7 @@
 
 Developers: Edro Gonzales, James Arevalo
 
-Utilizing following libraries:
+Utilizing following React.js libraries:
 
 - Styled Components
 - React Router

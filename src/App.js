@@ -1,10 +1,13 @@
 import React from "react";
+import { Navbar } from "./components";
+import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
   return (
-    <div>
-      <h1>First Initialization</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <Navbar />
+    </>
   );
 };
 
