@@ -1,10 +1,15 @@
 import React from "react";
+import { GalleryBox, GalleryCard } from "./Gallery.elements";
 
 export default function Gallery() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-      <h2>This is the gallery component</h2>
-    </div>
+    <>
+      <GalleryBox>
+        <GalleryCard />
+        <GalleryCard />
+        <GalleryCard />
+        <GalleryCard />
+      </GalleryBox>
+    </>
   );
 }
