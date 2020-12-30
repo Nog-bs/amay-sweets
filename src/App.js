@@ -1,14 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navbar, Gallery } from "./components";
 import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <GlobalStyles />
       <Navbar />
-      <Gallery />
-    </>
+      <Switch>
+        <Route path="/" exact component={Gallery} />
+      </Switch>
+    </Router>
   );
 };
 
