@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "./components";
+import { Navbar, Gallery } from "./components";
 import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <Navbar />
+      <Gallery />
     </>
   );
 };
