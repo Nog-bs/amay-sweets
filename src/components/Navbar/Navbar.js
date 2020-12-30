@@ -4,7 +4,7 @@ import { Nav } from "./Navbar.elements";
 const Navbar = () => {
   return (
     <>
-      <Nav>wassup</Nav>
+      <Nav>Amay Sweets</Nav>
     </>
   );
 };
