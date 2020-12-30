@@ -7,6 +7,7 @@ import {
   NavMenu,
   NavMenuClose,
   NavMobileMenu,
+  NavHr,
 } from "./Navbar.elements";
 
 const Navbar = () => {
@@ -17,14 +18,16 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavHeader>Amay Sweets</NavHeader>
+        <NavHeader to="/">Amay Sweets</NavHeader>
         <NavMobileMenu onClick={handleClick}>
-          {click ? <NavMenuClose /> : <NavMenu />}
+          {click ? <NavMenuClose /> : <NavMenu onClick={handleClick} />}
         </NavMobileMenu>
-        <NavList>
-          <NavItem>Home</NavItem>
-          <NavItem>About</NavItem>
-          <NavItem>Contact</NavItem>
+        <NavList click={click} onClick={click}>
+          <NavHr />
+          <NavItem to="/">Home</NavItem>
+          <NavItem to="/about">About</NavItem>
+          <NavItem to="/contact">Contact</NavItem>
+          <NavHr />
         </NavList>
       </Nav>
     </>
