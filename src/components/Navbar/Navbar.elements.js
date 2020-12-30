@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import blossoms from "../../assets/images/blossom.jpg";
 
 export const Nav = styled.nav`
-  background-image: url(${blossoms});
+  background: #ffb7c5;
   width: 100%;
   color: #fff;
   padding: 16px;
+  font-family: "DancingScript";
+  font-size: 2rem;
 `;
