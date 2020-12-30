@@ -1,10 +1,11 @@
 import React from "react";
+import { AboutSection, AboutImg } from "../styles/About.elements";
 
 const About = () => {
   return (
-    <>
-      <h1>yo</h1>
-    </>
+    <AboutSection>
+      <AboutImg />
+    </AboutSection>
   );
 };
 
