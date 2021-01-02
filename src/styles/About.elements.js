@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Family from "../assets/images/family.jpg";
+import Family from "../assets/Images/family.jpg";
 
 export const AboutSection = styled.section`
   display: flex;
