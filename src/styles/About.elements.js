@@ -1,15 +1,20 @@
 import styled from "styled-components";
-import Family from "../assets/images/family.jpg";
 
-export const AboutSection = styled.section`
+export const AboutSection = styled.section``;
+
+export const AboutCard = styled.div`
+  padding: 40px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  background-color: ${({ pinkBg }) =>
+    pinkBg ? "rgba(255, 183, 197, 1.0)" : "rgba(255, 183, 197, 0.3)"};
 
   @media (min-width: 768px) {
+    height: 75vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -17,8 +22,7 @@ export const AboutSection = styled.section`
 `;
 
 export const AboutImg = styled.div`
-  margin: 24px 0;
-  background-image: url(${Family});
+  background: ${({ image }) => `url(${image})`};
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -26,8 +30,6 @@ export const AboutImg = styled.div`
   border-radius: 5px;
 
   @media (min-width: 768px) {
-    height: 300px;
-    width: 400px;
     margin: 0 20px 0 0;
   }
 `;
@@ -41,12 +43,15 @@ export const AboutDescription = styled.div`
   margin-top: 16px;
 
   @media (min-width: 768px) {
-    margin-left: 20px;
+    margin: 20px;
+    order: ${({ order }) => (order ? "0" : "-1")};
   }
 `;
 
 export const AboutHead = styled.h2`
   font-family: "DancingScript";
+  text-align: center;
+  width: 275px;
 `;
 
 export const AboutHr = styled.hr`
@@ -60,4 +65,5 @@ export const AboutHr = styled.hr`
 
 export const AboutText = styled.p`
   background-image: ${({ image1 }) => image1};
+  text-align: center;
 `;
