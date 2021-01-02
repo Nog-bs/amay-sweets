@@ -1,15 +1,21 @@
 import React from "react";
 import { GalleryBox, GalleryCard } from "./Gallery.elements";
+import { data } from "../../data/GalleryData";
 
-export default function Gallery() {
+const Gallery = () => {
+  // const [flip, setFlip] = useState(false);
+
+  // const kickFlip = () => setFlip(!flip);
+
   return (
     <>
       <GalleryBox>
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
+        {data.map((card) => {
+          return <GalleryCard image1={card.image1} image2={card.image2} />;
+        })}
       </GalleryBox>
     </>
   );
-}
+};
+
+export default Gallery;
