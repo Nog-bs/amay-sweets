@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const GalleryBox = styled.div`
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 16px 0;
+  background: rgba(255, 183, 197, 0.6);
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    width: 80vw;
+    width: 100%;
     margin: 0 auto;
     padding: 32px 0px;
   }
@@ -21,10 +24,11 @@ export const GalleryBox = styled.div`
 
 export const GalleryCard = styled.div`
   background-image: ${({ image1 }) => `url(${image1})`};
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 80vw;
+  background-position: center;
+  height: 75vh;
+  width: 260px;
   margin: 16px;
   border: 2px solid pink;
   border-radius: 10px;
@@ -36,8 +40,8 @@ export const GalleryCard = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 80vw;
+    height: 75vh;
+    width: 260px;
     margin: 16px;
     border: 2px solid pink;
     border-radius: 10px;
@@ -46,7 +50,7 @@ export const GalleryCard = styled.div`
   }
 
   @media (min-width: 768px) {
-    background-size: cover;
+    background-size: 115%;
     background-repeat: no-repeat;
     height: 350px;
     width: 300px;
