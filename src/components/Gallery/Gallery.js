@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { GalleryBox, GalleryCard } from "./Gallery.elements";
 import { data } from "../../data/GalleryData";
 
