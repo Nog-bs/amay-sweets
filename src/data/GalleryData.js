@@ -15,7 +15,7 @@ import RoastedLotus2 from "../assets/images/Roasted_Lotus_6.jpg";
 import Shokupan1 from "../assets/images/Shokupan.PNG";
 import Shokupan2 from "../assets/images/Shokupan.jpg";
 import TriLayerMochiCake1 from "../assets/images/Tri_Layer_Mochi_Cake.PNG";
-import TriLayerMochiCake2 from "../assets/images/Tri_Layer_Mochi_Cake_1.jpg";
+import TriLayerMochiCake2 from "../assets/images/TriLayerMochiCake.jpg";
 import TriHize1 from "../assets/images/Tri-Hize.PNG";
 import TriHize2 from "../assets/images/Tri-Hize_1.jpg";
 

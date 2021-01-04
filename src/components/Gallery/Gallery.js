@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { GalleryBox, GalleryCard } from "./Gallery.elements";
 import { data } from "../../data/GalleryData";
 
 const Gallery = () => {
-  // const [flip, setFlip] = useState(false);
-
-  // const kickFlip = () => setFlip(!flip);
-
   return (
     <>
       <GalleryBox>
         {data.map((card) => {
-          return <GalleryCard image1={card.image1} image2={card.image2} />;
+          return (
+            <GalleryCard
+              image1={card.image1}
+              image2={card.image2}
+            ></GalleryCard>
+          );
         })}
       </GalleryBox>
     </>
