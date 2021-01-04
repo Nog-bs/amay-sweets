@@ -7,7 +7,7 @@ export const AboutData = [
   {
     head: "🤍 Mother Daughter homemade sweets",
     text:
-      "Lorem ipsum dolor, sit amet consectetu adipisicing elit. Iste libero dicta doloremque vitae cupiditate, earu laboriosam neque iusto ipsa assumenda optio, quisquam blanditiis qua architecto voluptates? Soluta, voluptas quod? Quasi.",
+      "We are a small family, mother and daughter, business local to Vancouver that loves to create homemade sweets.",
     image: `${family}`,
     pinkBg: false,
     order: true,
@@ -15,15 +15,15 @@ export const AboutData = [
   {
     head: "🍴 Food safe certified",
     text:
-      "Lorem ipsum dolor, sit amet consectetu adipisicing elit. Iste libero dicta doloremque vitae cupiditate, earu laboriosam neque iusto ipsa assumenda optio, quisquam blanditiis qua architecto voluptates? Soluta, voluptas quod? Quasi.",
+      "In acknowledging these current circumstances, we make sure ourselves to keep in line with COVID-19 protocols so that not only are we ourselves safe but others who eat our homemade sweets as well are too.",
     image: `${shokupan}`,
     pinkBg: true,
     order: false,
   },
   {
-    head: "✨ DM to order / enquire",
+    head: "✨ Instagram DM to order / enquire",
     text:
-      "Lorem ipsum dolor, sit amet consectetu adipisicing elit. Iste libero dicta doloremque vitae cupiditate, earu laboriosam neque iusto ipsa assumenda optio, quisquam blanditiis qua architecto voluptates? Soluta, voluptas quod? Quasi.",
+      "We are primarily a business that operates on Instagram and prefer direct messages through as such. Email is also an option as well. Please refer to the contact section of this site for the necessary links to contact us.",
     image: `${instagram}`,
     pinkBg: false,
     order: true,
@@ -31,7 +31,7 @@ export const AboutData = [
   {
     head: "☀️ Delivery + self pick-up available",
     text:
-      "Lorem ipsum dolor, sit amet consectetu adipisicing elit. Iste libero dicta doloremque vitae cupiditate, earu laboriosam neque iusto ipsa assumenda optio, quisquam blanditiis qua architecto voluptates? Soluta, voluptas quod? Quasi.",
+      "Delivery + self pick-up options are available only to Vancouver residents! Shoot us a DM or an email and we will work with you to ensure you get your homemade sweets.",
     image: `${delivery}`,
     pinkBg: true,
     order: false,

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const AboutSection = styled.section``;
+export const AboutSection = styled.section`
+  position: relative;
+  z-index: -1;
+`;
 
 export const AboutCard = styled.div`
   padding: 40px 16px;
@@ -11,7 +14,7 @@ export const AboutCard = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${({ pinkBg }) =>
-    pinkBg ? "rgba(255, 183, 197, 1.0)" : "rgba(255, 183, 197, 0.3)"};
+    pinkBg ? "rgba(255, 183, 197, 0.6)" : "rgba(255, 183, 197, 0.3)"};
 
   @media (min-width: 768px) {
     height: 75vh;
@@ -44,7 +47,7 @@ export const AboutDescription = styled.div`
 
   @media (min-width: 768px) {
     margin: 20px;
-    order: ${({ order }) => (order ? "0" : "-1")};
+    order: ${({ change }) => (change ? "0" : "-1")};
   }
 `;
 

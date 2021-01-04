@@ -5,7 +5,6 @@ import Logo from "../../assets/images/amay-sweets-logo.png";
 
 export const Nav = styled.nav`
   background: #ffb7c5;
-  width: 100%;
   color: #fff;
   padding: 16px;
   display: flex;
@@ -13,6 +12,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   height: 75px;
   box-shadow: 10px 10px #0000;
+  overflow: hidden;
+  z-index: 999;
 `;
 
 export const NavHeader = styled(Link)`
@@ -51,7 +52,7 @@ export const NavList = styled.ul`
   width: 100%;
   height: 100%;
   position: absolute;
-  left: ${({ click }) => (click ? 0 : "100%")};
+  right: ${({ click }) => (click ? "0" : "100%")};
   transition: all 0.4s ease;
   background: #ffb7c5;
   top: 60px;
