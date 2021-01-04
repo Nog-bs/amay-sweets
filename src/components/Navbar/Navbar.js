@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   Nav,
   NavHeader,
+  NavImage,
   NavList,
   NavItem,
   NavMenu,
@@ -18,6 +19,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
+        <NavImage to="/" />
         <NavHeader to="/">Amay Sweets</NavHeader>
         <NavMobileMenu onClick={handleClick}>
           {click ? <NavMenuClose /> : <NavMenu onClick={handleClick} />}

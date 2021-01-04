@@ -3,9 +3,9 @@ import { Gallery } from "../components";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Gallery />
-    </div>
+    </>
   );
 };
 

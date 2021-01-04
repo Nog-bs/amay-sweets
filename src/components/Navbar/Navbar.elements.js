@@ -1,17 +1,19 @@
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/amay-sweets-logo.png";
 
 export const Nav = styled.nav`
   background: #ffb7c5;
-  width: 100%;
   color: #fff;
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 75px;
   box-shadow: 10px 10px #0000;
+  overflow: hidden;
+  z-index: 999;
 `;
 
 export const NavHeader = styled(Link)`
@@ -31,6 +33,18 @@ export const NavHeader = styled(Link)`
   }
 `;
 
+export const NavImage = styled(Link)`
+  background-repeat: no-repeat;
+  background-image: url(${Logo});
+  height: 50px;
+  width: 60px;
+  background-size: 100% 100%;
+
+  @media (min-width: 768px) {
+    margin-right: 16px;
+  }
+`;
+
 export const NavList = styled.ul`
   display: flex;
   list-style: none;
@@ -38,7 +52,7 @@ export const NavList = styled.ul`
   width: 100%;
   height: 100%;
   position: absolute;
-  left: ${({ click }) => (click ? 0 : "100%")};
+  right: ${({ click }) => (click ? "0" : "100%")};
   transition: all 0.4s ease;
   background: #ffb7c5;
   top: 60px;
