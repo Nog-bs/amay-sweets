@@ -60,6 +60,7 @@ export const NavList = styled.ul`
   align-items: center;
   font-size: 1.5rem;
   padding: 24px;
+  z-index: 999;
 
   @media (min-width: 768px) {
     position: static;

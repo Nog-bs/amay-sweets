@@ -10,14 +10,13 @@ export const GalleryBox = styled.div`
   padding: 16px 0;
   background: rgba(255, 183, 197, 0.6);
   position: relative;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 32px 0px;
