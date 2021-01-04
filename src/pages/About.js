@@ -15,7 +15,7 @@ const About = () => {
   return (
     <AboutSection>
       {data.map((item, id) => (
-        <AboutCard key={id} pinkBg={item.pinkBg}>
+        <AboutCard change={item.order} key={id} pinkBg={item.pinkBg}>
           <Fade
             // IF INDEX OF ITEM IS EVEN LEFT ANIMATION
             left={data.indexOf(item) % 2 === 0}
@@ -23,7 +23,7 @@ const About = () => {
             right={data.indexOf(item) % 2 !== 0}
           >
             <AboutImg image={item.image} />
-            <AboutDescription change={item.order}>
+            <AboutDescription>
               <AboutHead>{item.head}</AboutHead>
               <AboutHr />
               <AboutText>{item.text}</AboutText>

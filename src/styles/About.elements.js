@@ -17,8 +17,8 @@ export const AboutCard = styled.div`
     pinkBg ? "rgba(255, 183, 197, 0.6)" : "rgba(255, 183, 197, 0.3)"};
 
   @media (min-width: 768px) {
-    height: 75vh;
-    flex-direction: row;
+    height: 60vh;
+    flex-direction: ${({ change }) => (change ? "row" : "row-reverse")};
     justify-content: center;
     align-items: center;
   }
@@ -30,7 +30,7 @@ export const AboutImg = styled.div`
   background-repeat: no-repeat;
   height: 300px;
   width: 288px;
-  border-radius: 5px;
+  border-radius: 100%;
 
   @media (min-width: 768px) {
     margin: 0 20px 0 0;
@@ -47,7 +47,6 @@ export const AboutDescription = styled.div`
 
   @media (min-width: 768px) {
     margin: 20px;
-    order: ${({ change }) => (change ? "0" : "-1")};
   }
 `;
 
