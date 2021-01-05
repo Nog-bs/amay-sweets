@@ -21,7 +21,7 @@ export const AboutData = [
     order: false,
   },
   {
-    head: "✨ Instagram DM to order / enquire",
+    head: "✨ Instagram DM to order / inquire",
     text:
       "We are primarily a business that operates on Instagram and prefer direct messages through as such. Email is also an option as well. Please refer to the contact section of this site for the necessary links to contact us.",
     image: `${instagram}`,
