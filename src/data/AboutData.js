@@ -7,7 +7,7 @@ export const AboutData = [
   {
     head: "🤍 Mother Daughter homemade sweets",
     text:
-      "We are a small family, mother and daughter, business local to Vancouver that loves to create homemade sweets.",
+      "We are a small family online business, mother and daughter, local to Vancouver that loves to create homemade sweets. This site is meant to be a display of our pastries. For further info regarding our homemade sweets continue down!",
     image: `${family}`,
     pinkBg: false,
     order: true,
@@ -15,7 +15,7 @@ export const AboutData = [
   {
     head: "🍴 Food safe certified",
     text:
-      "In acknowledging these current circumstances, we make sure ourselves to keep in line with COVID-19 protocols so that not only are we ourselves safe but others who eat our homemade sweets as well are too.",
+      "In acknowledging these current circumstances, we make sure ourselves to keep in line with COVID-19 protocols so that not only are we ourselves safe but others who eat our homemade sweets are too.",
     image: `${shokupan}`,
     pinkBg: true,
     order: false,
@@ -31,7 +31,7 @@ export const AboutData = [
   {
     head: "☀️ Delivery + self pick-up available",
     text:
-      "Delivery + self pick-up options are available only to Vancouver residents! Shoot us a DM or an email and we will work with you to ensure you get your homemade sweets.",
+      "Delivery + self pick-up options are available only to Vancouver residents! Shoot us a DM or an email and we will work with you to ensure you get our homemade sweets.",
     image: `${delivery}`,
     pinkBg: true,
     order: false,

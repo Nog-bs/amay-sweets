@@ -16,6 +16,8 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
+export const NavLink = styled.a``;
+
 export const NavHeader = styled(Link)`
   font-size: 2rem;
   font-weight: 700;
