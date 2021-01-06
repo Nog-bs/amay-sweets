@@ -16,6 +16,8 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
+export const NavLink = styled.a``;
+
 export const NavHeader = styled(Link)`
   font-size: 2rem;
   font-weight: 700;
@@ -60,6 +62,7 @@ export const NavList = styled.ul`
   align-items: center;
   font-size: 1.5rem;
   padding: 24px;
+  z-index: 999;
 
   @media (min-width: 768px) {
     position: static;

@@ -1,10 +1,15 @@
-import React from "react";
-import { Gallery } from "../components";
+import React, { useState } from "react";
+import { Gallery, Hero } from "../components";
+import { data } from "../data/GalleryData";
 
 const Home = () => {
+  // STORING DATA FROM GALLERY DATA
+  const [galleryData] = useState(data);
+
   return (
     <>
-      <Gallery />
+      <Hero galleryData={galleryData} />
+      <Gallery galleryData={galleryData} />
     </>
   );
 };

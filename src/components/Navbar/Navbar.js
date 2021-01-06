@@ -24,7 +24,7 @@ const Navbar = () => {
         <NavMobileMenu onClick={handleClick}>
           {click ? <NavMenuClose /> : <NavMenu onClick={handleClick} />}
         </NavMobileMenu>
-        <NavList click={click} onClick={click}>
+        <NavList click={click} onClick={handleClick}>
           <NavHr />
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>

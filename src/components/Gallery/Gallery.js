@@ -1,19 +1,29 @@
 import React from "react";
-import { GalleryBox, GalleryCard } from "./Gallery.elements";
-import { data } from "../../data/GalleryData";
+import {
+  GalleryBox,
+  GalleryCard,
+  GalleryButton,
+  GalleryContainer,
+  GalleryLink,
+} from "./Gallery.elements";
+import Flip from "react-reveal/Flip";
 
-const Gallery = () => {
+const Gallery = ({ galleryData }) => {
   return (
     <>
       <GalleryBox>
-        {data.map((card) => {
-          return (
-            <GalleryCard
-              image1={card.image1}
-              image2={card.image2}
-            ></GalleryCard>
-          );
-        })}
+        <GalleryContainer>
+          {galleryData.map((card, id) => {
+            return (
+              <Flip key={id} left>
+                <GalleryCard image1={card.image1} image2={card.image2} />
+              </Flip>
+            );
+          })}
+        </GalleryContainer>
+        <GalleryLink to="/about">
+          <GalleryButton>ABOUT</GalleryButton>
+        </GalleryLink>
       </GalleryBox>
     </>
   );
