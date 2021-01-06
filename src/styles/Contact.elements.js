@@ -98,7 +98,7 @@ export const ContactHr = styled.hr`
   border: none;
   height: 3px;
   border-radius: 5px;
-  margin: 8px;
+  margin: 16px;
   width: 60%;
   @media (min-width: 768px) {
     width: 200px;
