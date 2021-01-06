@@ -24,9 +24,13 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroText = styled.h2`
-  font-size: 10em;
+  font-size: 8em;
   color: #fff;
   font-family: "DancingScript", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 10em;
+  }
 `;
 
 export const HeroImg = styled.img``;

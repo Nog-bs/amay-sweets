@@ -5,7 +5,7 @@ import mom from "../assets/images/Mom.PNG";
 
 export const AboutData = [
   {
-    head: " Mother Daughter homemade sweets",
+    head: "🤍 Mother Daughter homemade sweets",
     text:
       "We are a small local business run by a mother-daughter team. Amay, is a combination of mother May and daughter Amy’s name. Our company started from a mothers efforts to learn baking as her daughter held a love for sweets, and a daughter, who recognized her mother’s efforts and talents and wanted to celebrate her mum and share it with the rest of the world. ",
     image: `${family}`,
